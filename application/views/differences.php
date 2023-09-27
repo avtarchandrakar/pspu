@@ -29,7 +29,7 @@
 						 <div class="col-lg-6 m-b30">
 							<h2 class="title-head ">Learn a new skill online<br/> <span class="text-primary"> on your time</span></h2>
 							<h4><span class="counter">57,000 </span> Online Courses</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+							<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
 							<a href="<?php echo site_url('Home/register');?>" class="btn button-md">Join Now</a>
 						 </div>
 						 <div class="col-lg-6">
@@ -90,7 +90,7 @@
 					<div class="row">
 						<div class="col-md-12 heading-bx text-center">
 							<h2 class="title-head text-uppercase m-b0">Why Choose <span> Our Institution</span></h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+							<p>केन्द्रीय कार्यालय </p>
 						</div>
 					</div>
 					<div class="row choose-bx-in">
@@ -189,7 +189,7 @@
 						<div class="col-lg-5 col-md-12 heading-bx">
 							<h2 class="m-b10">Our Story</h2>
 							<h5 class="fw4">It is a long established fact that a reade.</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+							<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 							<a href="#" class="btn">Read More</a>
 						</div>
 						<div class="col-lg-7 col-md-12 heading-bx p-lr">
@@ -208,7 +208,7 @@
 					<div class="row">
 						<div class="col-md-12 heading-bx left">
 							<h2 class="title-head text-uppercase">what people <span>say</span></h2>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+							<p></p>
 						</div>
 					</div>
 					<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
@@ -222,7 +222,7 @@
 									<p>-Art Director</p>
 								</div>
 								<div class="testimonial-content">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+									<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
 								</div>
 							</div>
 						</div>
@@ -236,7 +236,7 @@
 									<p>-Art Director</p>
 								</div>
 								<div class="testimonial-content">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+									<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
 								</div>
 							</div>
 						</div>

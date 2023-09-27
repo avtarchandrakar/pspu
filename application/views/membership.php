@@ -29,7 +29,7 @@
 					<div class="row">
 						<div class="col-md-12 heading-bx text-center">
 							<h2 class="title-head text-uppercase m-b0">Set a plan, start learning and <br/> <span> unlock your potential</span></h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+							<p>केन्द्रीय कार्यालय </p>
 						</div>
 					</div>
 					 <div class="pricingtable-row">
@@ -131,7 +131,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center heading-bx text-white">
 							<h2 class="title-head m-b0">Why Choose <span>Us</span></h2>
-							<p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+							<p class="m-b0">केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the</p>
 						</div>
 						<div class="col-md-6">	
 							<div class="why-chooses-bx ">

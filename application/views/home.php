@@ -291,7 +291,7 @@
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-									 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+									 केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the
 							</div>
 							<!-- LAYER NR. 4 -->
 							<div class="tp-caption Newspaper-Button rev-btn " 
@@ -449,7 +449,7 @@
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-									 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+									 केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the
 							</div>
 							<!-- LAYER NR. 4 -->
 							<div class="tp-caption Newspaper-Button rev-btn " 
@@ -556,7 +556,7 @@
 					<div class="row">
 						<div class="col-md-12 heading-bx left">
 							<h2 class="title-head">Popular <span>Courses</span></h2>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+							<p></p>
 						</div>
 					</div>
 					<div class="row">
@@ -755,7 +755,7 @@
 											<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 											<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 										</ul>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+										<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 									</div>
 								</div>
 							</div>
@@ -778,7 +778,7 @@
 											<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 											<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 										</ul>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+										<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 									</div>
 								</div>
 							</div>
@@ -801,7 +801,7 @@
 											<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 											<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 										</ul>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+										<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 									</div>
 								</div>
 							</div>
@@ -820,7 +820,7 @@
 					<div class="row">
 						<div class="col-md-12 text-white heading-bx left">
 							<h2 class="title-head text-uppercase">what people <span>say</span></h2>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+							<p></p>
 						</div>
 					</div>
 					<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
@@ -834,7 +834,7 @@
 									<p>-Art Director</p>
 								</div>
 								<div class="testimonial-content">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+									<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
 								</div>
 							</div>
 						</div>
@@ -848,7 +848,7 @@
 									<p>-Art Director</p>
 								</div>
 								<div class="testimonial-content">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+									<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
 								</div>
 							</div>
 						</div>
@@ -863,7 +863,7 @@
 					<div class="row">
 						<div class="col-md-12 heading-bx left">
 							<h2 class="title-head">Recent <span>News</span></h2>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+							<p></p>
 						</div>
 					</div>
 					<div class="recent-news-carousel owl-carousel owl-btn-1 col-12 p-lr0">

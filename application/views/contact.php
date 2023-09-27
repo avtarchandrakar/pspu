@@ -30,12 +30,12 @@
 					<div class="col-lg-5 col-md-5 m-b30">
 						<div class="bg-primary text-white contact-info-bx">
 							<h2 class="m-b10 title-head">Contact <span>Information</span></h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<p>केन्द्रीय कार्यालय</p>
 							<div class="widget widget_getintuch">	
 								<ul>
 									<li><i class="ti-location-pin"></i>मढ़रिया काम्पलेक्स ,महाराजा चौक,मुक्त नगर, जिला- दुर्ग (छत्तीसगढ़ ) पिन - 491001</li>
-									<li><i class="ti-mobile"></i>0800-123456 (24/7 Support Line)</li>
-									<li><i class="ti-email"></i>info@example.com</li>
+									<li><i class="ti-mobile"></i>9425234990,9303650593</li>
+									<li><i class="ti-email"></i>pspunational@gmail.com</li>
 								</ul>
 							</div>
 							<h5 class="m-t0 m-b20">Follow Us</h5>
@@ -52,7 +52,7 @@
 						<div class="ajax-message"></div>
 							<div class="heading-bx left">
 								<h2 class="title-head">Get In <span>Touch</span></h2>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+								<p></p>
 							</div>
 							<div class="row placeani">
 								<div class="col-lg-6">

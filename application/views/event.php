@@ -66,7 +66,7 @@
 												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 											</ul>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 										</div>
 									</div>
 								</div>
@@ -89,7 +89,7 @@
 												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 											</ul>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 										</div>
 									</div>
 								</div>
@@ -112,7 +112,7 @@
 												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 											</ul>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 										</div>
 									</div>
 								</div>
@@ -135,7 +135,7 @@
 												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 											</ul>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 										</div>
 									</div>
 								</div>
@@ -158,7 +158,7 @@
 												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 											</ul>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 										</div>
 									</div>
 								</div>
@@ -181,7 +181,7 @@
 												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
 												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
 											</ul>
-											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
 										</div>
 									</div>
 								</div>

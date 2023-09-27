@@ -37,7 +37,7 @@
 										<h2 class="post-title">Good Intentions or Good Results?</h2>
 									</div>
 									<div class="ttr-post-text">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 									</div>
 								</div>
 							</div>
@@ -56,9 +56,9 @@
 									</div>
 									<div class="col-md-12 col-lg-7">
 										<h5 class="m-b5">Event Description</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 										<h5 class="m-b5">Certification</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 										<h5 class="m-b5">Event Content</h5>
 										<ul class="list-checked primary">
 											<li>Over 37 lectures and 55.5 hours of content!</li>
@@ -77,12 +77,12 @@
 						<div class="col-lg-4 col-md-5 col-sm-12 m-b30">
 							<div class="bg-primary text-white contact-info-bx m-b30">
 								<h2 class="m-b10 title-head">Contact <span>Information</span></h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p>केन्द्रीय कार्यालय</p>
 								<div class="widget widget_getintuch">	
 									<ul>
-										<li><i class="ti-location-pin"></i>75k Newcastle St. Ponte Vedra Beach, FL 309382 New York</li>
-										<li><i class="ti-mobile"></i>0800-123456 (24/7 Support Line)</li>
-										<li><i class="ti-email"></i>info@example.com</li>
+										<li><i class="ti-location-pin"></i>मढ़रिया काम्पलेक्स ,महाराजा चौक,मुक्त नगर, जिला- दुर्ग (छत्तीसगढ़ ) पिन - 491001</li>
+										<li><i class="ti-mobile"></i>9425234990,9303650593</li>
+										<li><i class="ti-email"></i>pspunational@gmail.com</li>
 									</ul>
 								</div>
 								<h5 class="m-t0 m-b20">Follow Us</h5>
