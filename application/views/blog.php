@@ -53,7 +53,7 @@
 								<div class="info-bx">
 									<ul class="media-post">
 										<li><a href="#"><i class="fa fa-calendar"></i>Feb 05 2019</a></li>
-										<li><a href="#"><i class="fa fa-user"></i>By John</a></li>
+										<li><a href="#"><i class="fa fa-user"></i>By </a></li>
 									</ul>
 									<h5 class="post-title"><a href="<?php echo site_url('Media/blog_details');?>">What Will Education Be Like In The Next 50 Years?</a></h5>
 									<p>As desperate as you are right now, you have done everything you can on your.</p>
