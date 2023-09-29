@@ -159,6 +159,51 @@
       return $res;
     }
 
+    public function get_obcmorcha()
+    {
+      $this->db->select('*');
+      $this->db->where('category',10);
+      $this->db->order_by('id','DESC');
+      $this->db->where('m_post_status',1);
+      $this->db->join('master_category_tbl', 'master_category_tbl.m_category_id  = master_post_tbl.category','left');
+      $res = $this->db->get('master_post_tbl')->result();
+      return $res;
+    }
+
+    public function get_stmorcha()
+    {
+      $this->db->select('*');
+      $this->db->where('category',16);
+      $this->db->order_by('id','DESC');
+      $this->db->where('m_post_status',1);
+      $this->db->join('master_category_tbl', 'master_category_tbl.m_category_id  = master_post_tbl.category','left');
+      $res = $this->db->get('master_post_tbl')->result();
+      return $res;
+    }
+
+    public function get_scmorcha()
+    {
+      $this->db->select('*');
+      $this->db->where('category',15);
+      $this->db->order_by('id','DESC');
+      $this->db->where('m_post_status',1);
+      $this->db->join('master_category_tbl', 'master_category_tbl.m_category_id  = master_post_tbl.category','left');
+      $res = $this->db->get('master_post_tbl')->result();
+      return $res;
+    }
+
+     public function get_post_details($id)
+    {
+      $this->db->select('*');
+      $this->db->where('id',$id);
+      $this->db->order_by('id','DESC');
+      $this->db->where('m_post_status',1);
+      $this->db->join('master_category_tbl', 'master_category_tbl.m_category_id  = master_post_tbl.category','left');
+      $res = $this->db->get('master_post_tbl')->result();
+      // print_r($res);die();
+      return $res;
+    }
+
 
   }
 

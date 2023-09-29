@@ -21,18 +21,21 @@ class Morcha extends CI_Controller {
 	public function index()
 	{
 		$data['pagename'] = 'SC Morcha';
+		$data['scmorcha'] = $this->Main_model->get_scmorcha();
 		$this->load->view('sc_morcha',$data);
 	}
 
 	public function st_morcha()
 	{  
 		$data['pagename'] = 'ST Morcha';
+		$data['stmorcha'] = $this->Main_model->get_stmorcha();
 		$this->load->view('st_morcha',$data);
 	}
 
 	public function obc_morcha()
 	{   
 		$data['pagename'] = 'OBC Morcha';
+		$data['obcmorcha'] = $this->Main_model->get_obcmorcha();
 		$this->load->view('obc_morcha',$data);
 	} 
 	

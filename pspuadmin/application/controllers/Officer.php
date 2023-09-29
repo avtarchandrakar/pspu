@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
- class Officer extends CI_Controller{
+class Officer extends CI_Controller{
    
     public function officer_list(){ $data = $this->login_details();
         $data['pagename'] = "All Officer";

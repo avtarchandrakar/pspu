@@ -51,8 +51,8 @@
 
 							 <?php
                       
-		                         if (!empty($event)) {
-		                             foreach ($event as $value) {
+		                         if (!empty($stmorcha)) {
+		                             foreach ($stmorcha as $value) {
 		                              if(!empty($value->image))
 		                                {   
 		                                  $pou_img = base_url('pspuadmin/uploads/post/'.$value->image);

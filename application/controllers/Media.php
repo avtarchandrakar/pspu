@@ -28,6 +28,8 @@ class Media extends CI_Controller {
 	public function blog_details()
 	{   
 		$data['pagename'] = 'Blog Detail';
+		$data['id'] = $this->input->get('id');
+		$data['post_details'] = $this->Main_model->get_post_details($data['id']);
 		$this->load->view('blog_details',$data);
 	}
    
