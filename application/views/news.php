@@ -15,7 +15,7 @@
 		<div class="breadcrumb-row">
 			<div class="container">
 				<ul class="list-inline">
-					<li><a href="#">Home</a></li>
+					<li><a href="<?php echo base_url('Home');?>">Home</a></li>
 					<li><?php echo $pagename;  ?></li>
 				</ul>
 			</div>
@@ -29,238 +29,47 @@
 						<div class="col-lg-8 col-xl-8 col-md-7">
 							<!-- blog grid -->
 							<div id="masonry" class="ttr-blog-grid-3 row">
+
+                           <?php
+                           $i = 1;
+                          if (!empty($all_news)) {
+                             foreach ($all_news as $value) {
+                              if(!empty($value->image))
+                                {   
+                                  $pou_img = base_url('pspuadmin/uploads/post/'.$value->image);
+                                }else{
+                                  $pou_img = base_url('pspuadmin/uploads/post/2022-11-04.jpg');
+                                }
+                             ?>
+
+
 								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
 									<div class="recent-news">
 										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic1.jpg" alt="">
+											<img src="<?php echo $pou_img;?>" alt="">
 										</div>
 										<div class="info-bx">
 											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>Jan 02 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By William</a></li>
+												<li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-calendar"></i><i class="fa fa-clock-o"></i> <?php echo date("M d Y", strtotime($value->created_date));  ?></a></li>
+												<!-- <li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-user"></i>By William</a></li> -->
 											</ul>
-											<h5 class="post-title"><a href="blog-details.html">This Story Behind Education Will Haunt You Forever.</a></h5>
-											<p>Knowing that, you’ve optimised your pages countless amount of times, written tons.</p>
+											<h5 class="post-title"><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><?php echo $value->title;  ?></a></h5>
+											<p><?php echo $value->short_description; ?></p>
 											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a>
+												<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>" class="btn-link">READ MORE</a>
+												<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>" class="comments-bx"><i class="fa fa-comments-o"></i><?php echo $value->comments;  ?> Comment</a>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic2.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>Feb 05 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By John</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">What Will Education Be Like In The Next 50 Years?</a></h5>
-											<p>As desperate as you are right now, you have done everything you can on your.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>14 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic3.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>April 14 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By George</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">Master The Skills Of Education And Be.</a></h5>
-											<p>You will see in the guide all my years of valuable experience together with.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>23 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic3.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>March 21 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By Thomas</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">Eliminate Your Fears And Doubts About Education.</a></h5>
-											<p>When I needed to start from scratch and figure out how things work. Getting people.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>28 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic1.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>May 08 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By James</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">Seven Reasons You Should Fall In Love With Education.</a></h5>
-											<p>Honestly, I made ZERO money in the first year and I definitely do not want you to go.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>26 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic2.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>June 19 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By Arthur</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">The Biggest Contribution Of Education To Humanity.</a></h5>
-											<p>You may have seen our tool that's been featured by many world-class SEO marketers.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>15 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic1.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>Jan 02 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By William</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">This Story Behind Education Will Haunt You Forever.</a></h5>
-											<p>Knowing that, you’ve optimised your pages countless amount of times, written tons.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>20 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic2.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>Feb 05 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By John</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">What Will Education Be Like In The Next 50 Years?</a></h5>
-											<p>As desperate as you are right now, you have done everything you can on your.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>14 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic3.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>April 14 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By George</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">Master The Skills Of Education And Be.</a></h5>
-											<p>You will see in the guide all my years of valuable experience together with.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>23 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic3.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>March 21 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By Thomas</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">Eliminate Your Fears And Doubts About Education.</a></h5>
-											<p>When I needed to start from scratch and figure out how things work. Getting people.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>28 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic1.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>May 08 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By James</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">Seven Reasons You Should Fall In Love With Education.</a></h5>
-											<p>Honestly, I made ZERO money in the first year and I definitely do not want you to go.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>26 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo base_url();?>assets/images/blog/latest-blog/pic2.jpg" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-calendar"></i>June 19 2019</a></li>
-												<li><a href="#"><i class="fa fa-user"></i>By Arthur</a></li>
-											</ul>
-											<h5 class="post-title"><a href="blog-details.html">The Biggest Contribution Of Education To Humanity.</a></h5>
-											<p>You may have seen our tool that's been featured by many world-class SEO marketers.</p>
-											<div class="post-extra">
-												<a href="#" class="btn-link">READ MORE</a>
-												<a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>15 Comment</a>
-											</div>
-										</div>
-									</div>
-								</div>
+
+							<?php }} ?>
+
+								
 							</div>
 							<!-- blog grid END -->
 							<!-- Pagination -->
-							<div class="pagination-bx rounded-sm gray clearfix">
+							<!-- <div class="pagination-bx rounded-sm gray clearfix">
 								<ul class="pagination">
 									<li class="previous"><a href="#"><i class="ti-arrow-left"></i> Prev</a></li>
 									<li class="active"><a href="#">1</a></li>
@@ -268,7 +77,7 @@
 									<li><a href="#">3</a></li>
 									<li class="next"><a href="#">Next <i class="ti-arrow-right"></i></a></li>
 								</ul>
-							</div>
+							</div> -->
 							<!-- Pagination END -->
 						</div>
 						<!-- left part END -->
@@ -291,42 +100,32 @@
 								<div class="widget recent-posts-entry">
 									<h6 class="widget-title">Recent Posts</h6>
 									<div class="widget-post-bx">
+                                         <?php
+				                           
+				                          if (!empty($recent_news)) {
+				                             foreach ($recent_news as $value) {
+				                              if(!empty($value->image))
+				                                {   
+				                                  $pou_img = base_url('pspuadmin/uploads/post/'.$value->image);
+				                                }else{
+				                                  $pou_img = base_url('pspuadmin/uploads/post/2022-11-04.jpg');
+				                                }
+				                             ?>
+
 										<div class="widget-post clearfix">
-											<div class="ttr-post-media"> <img src="<?php echo base_url();?>assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
+											<div class="ttr-post-media"> <img src="<?php echo $pou_img;?>" width="200" height="143" alt=""> </div>
 											<div class="ttr-post-info">
 												<div class="ttr-post-header">
-													<h6 class="post-title"><a href="blog-details.html">This Story Behind Education Will Haunt You Forever.</a></h6>
+													<h6 class="post-title"><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><?php echo $value->title;  ?></a></h6>
 												</div>
 												<ul class="media-post">
-													<li><a href="#"><i class="fa fa-calendar"></i>Oct 23 2019</a></li>
-													<li><a href="#"><i class="fa fa-comments-o"></i>15 Comment</a></li>
+													<li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-calendar"></i><?php echo date("M d Y", strtotime($value->created_date));  ?></a></li>
+													<li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-comments-o"></i><?php echo $value->comments;  ?> Comment</a></li>
 												</ul>
 											</div>
 										</div>
-										<div class="widget-post clearfix">
-											<div class="ttr-post-media"> <img src="<?php echo base_url();?>assets/images/blog/recent-blog/pic2.jpg" width="200" height="160" alt=""> </div>
-											<div class="ttr-post-info">
-												<div class="ttr-post-header">
-													<h6 class="post-title"><a href="blog-details.html">What Will Education Be Like In The Next 50 Years?</a></h6>
-												</div>
-												<ul class="media-post">
-													<li><a href="#"><i class="fa fa-calendar"></i>May 14 2019</a></li>
-													<li><a href="#"><i class="fa fa-comments-o"></i>23 Comment</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="widget-post clearfix">
-											<div class="ttr-post-media"> <img src="<?php echo base_url();?>assets/images/blog/recent-blog/pic3.jpg" width="200" height="160" alt=""> </div>
-											<div class="ttr-post-info">
-												<div class="ttr-post-header">
-													<h6 class="post-title"><a href="blog-details.html">Eliminate Your Fears And Doubts About Education.</a></h6>
-												</div>
-												<ul class="media-post">
-													<li><a href="#"><i class="fa fa-calendar"></i>June 12 2019</a></li>
-													<li><a href="#"><i class="fa fa-comments-o"></i>27 Comment</a></li>
-												</ul>
-											</div>
-										</div>
+									<?php }} ?>
+										
 									</div>
 								</div>
 								<div class="widget widget-newslatter">
@@ -344,42 +143,8 @@
 										</form>
 									</div>
 								</div>
-								<div class="widget widget_gallery gallery-grid-4">
-									<h6 class="widget-title">Our Gallery</h6>
-									<ul>
-										<li><div><a href="#"><img src="assets/images/gallery/pic2.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic1.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic5.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic7.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic8.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic9.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic3.jpg" alt=""></a></div></li>
-										<li><div><a href="#"><img src="assets/images/gallery/pic4.jpg" alt=""></a></div></li>
-									</ul>
-								</div>
-								<div class="widget widget_tag_cloud">
-									<h6 class="widget-title">Tags</h6>
-									<div class="tagcloud"> 
-										<a href="#">Design</a> 
-										<a href="#">User interface</a> 
-										<a href="#">SEO</a> 
-										<a href="#">WordPress</a> 
-										<a href="#">Development</a> 
-										<a href="#">Joomla</a> 
-										<a href="#">Design</a> 
-										<a href="#">User interface</a> 
-										<a href="#">SEO</a> 
-										<a href="#">WordPress</a> 
-										<a href="#">Development</a> 
-										<a href="#">Joomla</a> 
-										<a href="#">Design</a> 
-										<a href="#">User interface</a> 
-										<a href="#">SEO</a> 
-										<a href="#">WordPress</a> 
-										<a href="#">Development</a> 
-										<a href="#">Joomla</a> 
-									</div>
-								</div>
+								
+								
 							</aside>
 						</div>
 						<!-- Side bar END -->

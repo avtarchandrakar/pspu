@@ -48,144 +48,46 @@
 					</div>
 					<div class="clearfix">
 						<ul id="masonry" class="ttr-gallery-listing magnific-image row">
+
+                           <?php
+                           $i = 1;
+                         if (!empty($district)) {
+                             foreach ($district as $value) {
+                              if(!empty($value->image))
+                                {   
+                                  $pou_img = base_url('pspuadmin/uploads/post/'.$value->image);
+                                }else{
+                                  $pou_img = base_url('pspuadmin/uploads/post/2022-11-04.jpg');
+                                }
+                             
+                     
+                       ?>
 							<li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
 								<div class="event-bx m-b30">
 									<div class="action-box">
-										<img src="<?php echo base_url();?>assets/images/event/pic1.jpg" alt="">
+										<img src="<?php echo $pou_img;?>" alt="">
 									</div>
 									<div class="info-bx d-flex">
 										<div>
 											<div class="event-time">
-												<div class="event-date">29</div>
-												<div class="event-month">October</div>
+												<div class="event-date"><?php echo date("d", strtotime($value->created_date));  ?></div>
+												<div class="event-month"><?php echo date("F", strtotime($value->created_date));  ?></div>
 											</div>
 										</div>
 										<div class="event-info">
-											<h4 class="event-title"><a href="javascript:;">Education Autumn Tour 2019</a></h4>
+											<h4 class="event-title"><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><?php echo $value->title;  ?></a></h4>
 											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
+												<li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-clock-o"></i> <?php echo date("h:i A", strtotime($value->created_time));  ?></a></li>
+												<!-- <li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li> -->
 											</ul>
-											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
+											<p><?php echo $value->short_description; ?></p>
 										</div>
 									</div>
 								</div>
 							</li>
-							<li class="action-card col-lg-6 col-md-6 col-sm-12 upcoming">
-								<div class="event-bx m-b30">
-									<div class="action-box">
-										<img src="<?php echo base_url();?>assets/images/event/pic2.jpg" alt="">
-									</div>
-									<div class="info-bx d-flex">
-										<div>
-											<div class="event-time">
-												<div class="event-date">29</div>
-												<div class="event-month">October</div>
-											</div>
-										</div>
-										<div class="event-info">
-											<h4 class="event-title"><a href="javascript:;">Education Autumn Tour 2019</a></h4>
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-											</ul>
-											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="action-card col-lg-6 col-md-6 col-sm-12  upcoming">
-								<div class="event-bx m-b30">
-									<div class="action-box">
-										<img src="<?php echo base_url();?>assets/images/event/pic3.jpg" alt="">
-									</div>
-									<div class="info-bx d-flex">
-										<div>
-											<div class="event-time">
-												<div class="event-date">29</div>
-												<div class="event-month">October</div>
-											</div>
-										</div>
-										<div class="event-info">
-											<h4 class="event-title"><a href="javascript:;">Education Autumn Tour 2019</a></h4>
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-											</ul>
-											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
-								<div class="event-bx m-b30">
-									<div class="action-box">
-										<img src="<?php echo base_url();?>assets/images/event/pic4.jpg" alt="">
-									</div>
-									<div class="info-bx d-flex">
-										<div>
-											<div class="event-time">
-												<div class="event-date">29</div>
-												<div class="event-month">October</div>
-											</div>
-										</div>
-										<div class="event-info">
-											<h4 class="event-title"><a href="javascript:;">Education Autumn Tour 2019</a></h4>
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-											</ul>
-											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="action-card col-lg-6 col-md-6 col-sm-12 expired">
-								<div class="event-bx m-b30">
-									<div class="action-box">
-										<img src="<?php echo base_url();?>assets/images/event/pic2.jpg" alt="">
-									</div>
-									<div class="info-bx d-flex">
-										<div>
-											<div class="event-time">
-												<div class="event-date">29</div>
-												<div class="event-month">October</div>
-											</div>
-										</div>
-										<div class="event-info">
-											<h4 class="event-title"><a href="javascript:;>">Education Autumn Tour 2019</a></h4>
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-											</ul>
-											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="action-card col-lg-6 col-md-6 col-sm-12 happening">
-								<div class="event-bx m-b30">
-									<div class="action-box">
-										<img src="<?php echo base_url();?>assets/images/event/pic1.jpg" alt="">
-									</div>
-									<div class="info-bx d-flex">
-										<div>
-											<div class="event-time">
-												<div class="event-date">29</div>
-												<div class="event-month">October</div>
-											</div>
-										</div>
-										<div class="event-info">
-											<h4 class="event-title"><a href="javascript:">Education Autumn Tour 2019</a></h4>
-											<ul class="media-post">
-												<li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-												<li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a></li>
-											</ul>
-											<p>केन्द्रीय कार्यालय Lorem Ipsum has been the industry's standard dummy text ever since the..</p>
-										</div>
-									</div>
-								</div>
-							</li>
+						<?php }}  ?>
+
+							
 						</ul>
 					</div>
 				</div>

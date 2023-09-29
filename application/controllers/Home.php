@@ -21,6 +21,11 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['pagename'] = 'Home';
+		$data['slider'] = $this->Main_model->get_sider();
+		$data['popular'] = $this->Main_model->get_popular();
+		$data['upcoming_event'] = $this->Main_model->get_upcoming_event();
+		$data['testimorial'] = $this->Main_model->get_testinorial();
+		$data['news'] = $this->Main_model->get_recentnews();
 		$this->load->view('home',$data);
 	}
 

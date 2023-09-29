@@ -21,18 +21,21 @@ class Leadership extends CI_Controller {
 	public function index()
 	{
 		$data['pagename'] = 'National Leadership';
+		$data['nationallead'] = $this->Main_model->get_national();
 		$this->load->view('lead_national',$data);
 	}
 
 	public function state()
 	{  
 		$data['pagename'] = 'State Leadership';
+		$data['state'] = $this->Main_model->get_state();
 		$this->load->view('lead_state',$data);
 	}
 
 	public function district()
 	{   
 		$data['pagename'] = 'District Leadership';
+		$data['district'] = $this->Main_model->get_district();
 		$this->load->view('lead_district',$data);
 	} 
 	

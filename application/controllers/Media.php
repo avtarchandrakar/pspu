@@ -21,6 +21,7 @@ class Media extends CI_Controller {
 	public function index()
 	{
 		$data['pagename'] = 'Blog';
+		$data['blog'] = $this->Main_model->get_blog();
 		$this->load->view('blog',$data);
 	}
 
@@ -33,18 +34,22 @@ class Media extends CI_Controller {
    public function news()
 	{   
 		$data['pagename'] = 'News';
+		$data['all_news'] = $this->Main_model->get_news();
+		$data['recent_news'] = $this->Main_model->get_news_recent();
 		$this->load->view('news',$data);
 	}
 
 	public function press()
 	{   
 		$data['pagename'] = 'Press';
+		$data['press'] = $this->Main_model->get_press();
 		$this->load->view('press',$data);
 	}
 
 	public function news_details()
 	{
 		$data['pagename'] = 'News Details';
+
 		$this->load->view('news_details',$data);
 	}
 
@@ -52,6 +57,8 @@ class Media extends CI_Controller {
 	public function event()
 	{   
 		$data['pagename'] = 'Event';
+		$data['event'] = $this->Main_model->get_event();
+		$data['recent_event'] = $this->Main_model->get_event_recent();
 		$this->load->view('event',$data);
 	}
 
