@@ -3,7 +3,9 @@ date_default_timezone_set('Asia/Kolkata');
 class Shops extends CI_Controller
 {
     
-  public function shop_list(){ $data = $this->login_details();
+    
+  public function shop_list(){ 
+    // $data = $this->login_details();
         $data['pagename'] = "All Registraion Details";
         $data['from_date'] ='';
         $data['to_date'] ='';
@@ -20,7 +22,7 @@ class Shops extends CI_Controller
 
      public function add_shop(){ 
 
-       $data = $this->login_details();
+       // $data = $this->login_details();
         $data['id'] = $this->input->get('id');
         if(!empty($data['id'] )){ $data['pagename'] = "Edit Registraion Details"; }else{
           $data['pagename'] = "Add Registraion Details"; 
@@ -36,7 +38,7 @@ class Shops extends CI_Controller
 
 public function edit_shop(){ 
 
-       $data = $this->login_details();
+       // $data = $this->login_details();
         $data['id'] = $this->input->get('id');
         if(!empty($data['id'] )){ $data['pagename'] = "Edit Registraion Details"; }else{
           $data['pagename'] = "Add Registraion Details"; 
@@ -51,7 +53,7 @@ public function edit_shop(){
       }
 
     public function insert_shop_dtl(){
-        if ($this->ajax_login() === false){ return; }
+        // if ($this->ajax_login() === false){ return; }
         if($_SERVER["REQUEST_METHOD"] == "POST"){
           if($data = $this->Main_model->insert_shop_dtl()){
             $info = array( 'status'=>'success',
@@ -67,7 +69,8 @@ public function edit_shop(){
         }
       }
 
-      public function view_shop_dtl(){ $data = $this->login_details();
+      public function view_shop_dtl(){ 
+        // $data = $this->login_details();
         $data['pagename'] = "User Details";
         $data['id'] = $this->input->get('id');
         $data['edit_value'] = $this->Main_model->get_shop_dtl($data['id']);
@@ -76,7 +79,8 @@ public function edit_shop(){
        $this->load->view('view_shop', $data);
       
       }
-      public function delete_shop_dtl(){ if ($this->ajax_login() === false) { return; }
+      public function delete_shop_dtl(){ 
+        // if ($this->ajax_login() === false) { return; }
           if($_SERVER["REQUEST_METHOD"] == "POST"){
             if($info = $this->Main_model->delete_shop_dtl()){
             }
@@ -132,9 +136,10 @@ public function edit_shop(){
 
 
  //==========================Details===========================//
-protected function login_details(){ $this->require_login();
-    $data['log_user_dtl'] = $this->Login_model->user_details();
-    return $data;
+protected function login_details(){ 
+  // $this->require_login();
+  //   $data['log_user_dtl'] = $this->Login_model->user_details();
+  //   return $data;
   }
   //=========================/Details===========================//
 //======================Login Validation======================//

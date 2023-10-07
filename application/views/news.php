@@ -43,25 +43,27 @@
                              ?>
 
 
-								<div class="post action-card col-xl-6 col-lg-6 col-md-12 col-xs-12 m-b40">
-									<div class="recent-news">
-										<div class="action-box">
-											<img src="<?php echo $pou_img;?>" alt="">
-										</div>
-										<div class="info-bx">
-											<ul class="media-post">
-												<li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-calendar"></i><i class="fa fa-clock-o"></i> <?php echo date("M d Y", strtotime($value->created_date));  ?></a></li>
-												<!-- <li><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><i class="fa fa-user"></i>By William</a></li> -->
-											</ul>
-											<h5 class="post-title"><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><?php echo $value->title;  ?></a></h5>
-											<p><?php echo $value->short_description; ?></p>
-											<div class="post-extra">
-												<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>" class="btn-link">READ MORE</a>
-												<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>" class="comments-bx"><i class="fa fa-comments-o"></i><?php echo $value->comments;  ?> Comment</a>
+								<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>">
+									<div class="post action-card col-lg-4 col-md-6 col-sm-12 col-xs-12 m-b40">
+										<div class="recent-news">
+											<div class="action-box">
+												<img src="<?php echo $pou_img;?>" alt="">
+											</div>
+											<div class="info-bx">
+												<ul class="media-post">
+													<li><a href="#"><i class="fa fa-calendar"></i></a><?php echo date('d-m-Y',strtotime($value->created_date));  ?></li>
+													<!-- <li><a href="#"><i class="fa fa-user"></i>By William</a></li> -->
+												</ul>
+												<h5 class="post-title"><a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>"><?php echo $value->title;  ?></a></h5>
+												<p><?php echo $value->short_description; ?></p>
+												<div class="post-extra">
+													<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>#" class="btn-link">READ MORE</a>
+													<a href="<?php echo base_url('Media/blog_details?id=').$value->id; ?>" class="comments-bx"><i class="fa fa-comments-o"></i><?php echo $value->comments;  ?> Comment</a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 
 							<?php }} ?>
 

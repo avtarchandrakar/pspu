@@ -1,6 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
 class Students extends CI_Controller{
+   
+
     public function student_list(){ $data = $this->login_details();
         $data['pagename'] = "All User Details";
         $data['from_date'] ='';

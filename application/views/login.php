@@ -11,10 +11,10 @@
 	<meta name="robots" content="" />
 	
 	<!-- DESCRIPTION -->
-	<meta name="description" content="PSPU : <?php echo $pagename;  ?>" />
+	<meta name="description" content="PSPU" />
 	
 	<!-- OG -->
-	<meta property="og:title" content="PSPU : <?php echo $pagename;  ?>" />
+	<meta property="og:title" content="PSPU" />
 	<meta property="og:description" content="PSPU : <?php echo $pagename;  ?>" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
@@ -52,25 +52,18 @@
 <div class="page-wraper">
 	<div id="loading-icon-bx"></div>
 	<div class="account-form">
-		<div class="account-head" style="background-image:url('<?php echo base_url();?>assets/images/background/bg2.jpg);">
-			<a href="index.html"><img src="<?php echo base_url();?>assets/images/logo-white-2.png" alt=""></a>
+		<div class="account-head" style="background-image:url(<?php echo base_url();?>assets/images/background/bg2.jpg);">
+			<a href="<?php echo base_url('Home');?>">
+				<img src="<?php echo base_url();?>assets/images/logo-white-2.png" alt=""></a>
 		</div>
 		<div class="account-form-inner">
 			<div class="account-container">
 				<div class="heading-bx left">
-					<h2 class="title-head">Sign Up <span>Now</span></h2>
-					<p>Login Your Account <a href="javascript:;">Click here</a></p>
+					<h2 class="title-head">Sign In <span>Now</span></h2>
+					<p>Sign Up Your Account <a href="<?php echo base_url('Home/register');?>">Click here</a></p>
 				</div>	
 				<form class="contact-bx">
 					<div class="row placeani">
-						<div class="col-lg-12">
-							<div class="form-group">
-								<div class="input-group">
-									<label>Your Name</label>
-									<input name="dzName" type="text" required="" class="form-control">
-								</div>
-							</div>
-						</div>
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
@@ -88,9 +81,9 @@
 							</div>
 						</div>
 						<div class="col-lg-12 m-b30">
-							<button name="submit" type="submit" value="Submit" class="btn button-md">Sign Up</button>
+							<button name="submit" type="submit" value="Submit" class="btn button-md">Sign In</button>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-lg-12" style="display:none;">
 							<h6>Sign Up with Social media</h6>
 							<div class="d-flex">
 								<a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i>Google Account</a>

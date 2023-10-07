@@ -1,8 +1,12 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
+
  class Post extends CI_Controller{
+
+  
    
-    public function post_list(){ $data = $this->login_details();
+    public function post_list(){ 
+        // $data = $this->login_details();
         $data['pagename'] = "All Post";
         $data['from_date'] ='';
         $data['to_date'] ='';
@@ -17,7 +21,7 @@ date_default_timezone_set('Asia/Kolkata');
 
       public function add_post(){ 
 
-       $data = $this->login_details();
+       // $data = $this->login_details();
         $data['id'] = $this->input->get('id');
         if(!empty($data['id'] )){ $data['pagename'] = "Edit Post Details"; }else{
           $data['pagename'] = "Add Post Details"; 
@@ -31,7 +35,7 @@ date_default_timezone_set('Asia/Kolkata');
       }
 
       public function insert_post_dtl(){
-        if ($this->ajax_login() === false){ return; }
+        // if ($this->ajax_login() === false){ return; }
         if($_SERVER["REQUEST_METHOD"] == "POST"){
           if($data = $this->Main_model->insert_post_dtl()){
             $info = array( 'status'=>'success',
@@ -47,7 +51,8 @@ date_default_timezone_set('Asia/Kolkata');
         }
       }
 
-       public function view_post_dtl(){ $data = $this->login_details();
+       public function view_post_dtl(){ 
+        // $data = $this->login_details();
         $data['pagename'] = "Post Details";
         $data['id'] = $this->input->get('id');
         $data['edit_value'] = $this->Main_model->get_post_dtl($data['id']);
@@ -70,26 +75,36 @@ date_default_timezone_set('Asia/Kolkata');
         }
 
 //==========================Details===========================//
-protected function login_details(){ $this->require_login();
+  public function login_details()
+  {
+    $this->require_login();
     $data['log_user_dtl'] = $this->Login_model->user_details();
     return $data;
   }
   //=========================/Details===========================//
 
- 
   //======================Login Validation======================//
-  protected function require_login(){
+  public function require_login()
+  {
     $is_user_in = $this->session->userdata('is_user_in');
-    if(isset($is_user_in) || $is_user_in == true){ return;
-    } else { redirect('Login'); }
-  }
-  
-  protected function ajax_login($nav_id=''){
-    $is_user_in = $this->session->userdata('is_user_in');
-    if(isset($is_user_in) || $is_user_in == true){ return true;
-    } else { echo json_encode(array( 'status'=>'error', 'message'=>'You are not Logged in Now!! Please login again.')); return false; 
+    if (isset($is_user_in) || $is_user_in == true) {
+      return;
+    } else {
+      redirect('Login');
     }
   }
+
+  public function ajax_login()
+  {
+    $is_user_in = $this->session->userdata('is_user_in');
+    if (isset($is_user_in) || $is_user_in == true) {
+      return true;
+    } else {
+      echo json_encode(array('status' => 'error', 'message' => 'You are not Logged in Now!! Please login again.'));
+      return false;
+    }
+  }
+ 
   //=====================/Login Validation======================//
 }
 

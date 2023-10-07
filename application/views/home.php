@@ -378,8 +378,8 @@
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-bank text-primary"></i>
 									</div>
-									<h4><a href="#">Best Industry Leaders</a></h4>
-									<a href="#" class="btn radius-xl">View More</a>
+									<h4><a href="#" style="font-weight:bold;">राष्ट्रीय अध्यक्ष </a><br>गिरधर मढ़रिया (एम.काम., एल.एल.बी.)</h4>
+									<!-- <a href="#" class="btn radius-xl">View More</a> -->
 								</div>
 							</div>
 						</div>
@@ -392,8 +392,8 @@
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-book text-primary"></i>
 									</div>
-									<h4><a href="#">Learn Courses Online</a></h4>
-									<a href="#" class="btn radius-xl">View More</a>
+									<h4><a href="#" style="font-weight:bold;">चैतू भाई पटेल </a><br>राष्ट्रीय महासचिव </h4>
+									<!-- <a href="#" class="btn radius-xl">View More</a> -->
 								</div>
 							</div>
 						</div>
@@ -406,8 +406,8 @@
 									<div class="feature-box-sm radius bg-white">
 										<i class="fa fa-file-text-o text-primary"></i>
 									</div>
-									<h4><a href="#">Book Library & Store</a></h4>
-									<a href="#" class="btn radius-xl">View More</a>
+									<h4><a href="#" style="font-weight:bold;">पुष्पा पराते </a><br>राष्ट्रीय कोषाध्यक्ष</h4>
+									<!-- <a href="#" class="btn radius-xl">View More</a> -->
 								</div>
 							</div>
 						</div>
@@ -889,7 +889,7 @@
 							</div>
 						</div>
                     </div>
-					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+					<!-- <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
                         <div class="widget widget_gallery gallery-grid-4">
                             <h5 class="footer-title">Our Gallery</h5>
                             <ul class="magnific-image">
@@ -903,7 +903,7 @@
 								<li><a href="assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic8.jpg" alt=""></a></li>
 							</ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

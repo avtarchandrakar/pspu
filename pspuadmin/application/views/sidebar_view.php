@@ -169,7 +169,7 @@
         
         <li li class="">
 
-          <a href="<?php echo site_url('post/post_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/booking.png');?>"> Post List </a>
+          <a href="<?php echo site_url('Post/post_list') ?>" class="mynev-links"> <img class="icon-size" src="<?php echo base_url('uploads/icon/booking.png');?>"> Post List </a>
 
         </li>
 

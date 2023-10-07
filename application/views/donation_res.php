@@ -53,15 +53,16 @@
 	<div id="loading-icon-bx"></div>
 	<div class="account-form">
 		<div class="account-head" style="background-image:url(<?php echo base_url();?>assets/images/background/bg2.jpg);">
-			<a href="index.html"><img src="<?php echo base_url();?>assets/images/logo-white-2.png" alt=""></a>
+			<a href="<?php echo base_url('Home');?>">
+				<img src="<?php echo base_url();?>assets/images/logo-white-2.png" alt=""></a>
 		</div>
 		<div class="account-form-inner">
 			<div class="account-container">
 				<div class="heading-bx left">
-					<h2 class="title-head">Sign Up <span>Now</span></h2>
-					<p>Login Your Account <a href="javascript:;">Click here</a></p>
+					<h2 class="title-head">Donation <span>Now</span></h2>
+					<p>Login Your Account <a href="<?php echo base_url('Home/login');?>">Click here</a></p>
 				</div>	
-				<form class="contact-bx">
+				<form class="contact-bx" method="post" action="#" id="frm-create" enctype="mutipart/form-data">
 					<div class="row placeani">
 						<div class="col-lg-12">
 							<div class="form-group">
@@ -90,7 +91,7 @@
 						<div class="col-lg-12 m-b30">
 							<button name="submit" type="submit" value="Submit" class="btn button-md">Sign Up</button>
 						</div>
-						<div class="col-lg-12">
+						<div class="col-lg-12" style="display:none;">
 							<h6>Sign Up with Social media</h6>
 							<div class="d-flex">
 								<a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i>Google Account</a>
@@ -119,5 +120,31 @@
 <script src="<?php echo base_url();?>assets/js/contact.js"></script>
 <script src='<?php echo base_url();?>assets/vendors/switcher/switcher.js'></script>
 </body>
-
+<script type="text/javascript">
+	$("#frm-create").submit(function(e) { e.preventDefault();
+      var clkbtn = $("#btn-create"); clkbtn.prop('disabled',true);
+      var formData = new FormData(this); 
+      
+      $.ajax({
+        type: "POST",
+        url: "<?php echo site_url('Officer/insert_officer_dtl'); ?>",
+        data: formData,
+        processData: false,
+        contentType: false,
+        dataType: "JSON", 
+        success: function(data) {
+          if(data.status=='success'){
+            swal(data.message, {icon: "success", timer: 1000, });
+            setTimeout(function(){
+              window.location = "<?php echo site_url('Officer/officer_list'); ?>"; 
+            },1000);
+          }else{ clkbtn.prop('disabled',false);
+            swal(data.message, {icon: "error", timer: 5000, });
+          }   
+        }, error: function (jqXHR, status, err){ clkbtn.prop('disabled',false);
+          swal("Some Problem Occurred!! please try again", { icon: "error", timer: 2000, });
+        }
+      });
+    });
+</script>
 </html>

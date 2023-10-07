@@ -4,7 +4,7 @@ class API_model extends CI_model {
     function sendSms($message,$mobile,$dltid){
 
         //Your authentication key
-      $authKey = "303928AjHixtxm5dce3987";
+      $authKey = "303928AjHixtxm5dce398712";
        //Multiple mobiles numbers separated by comma
       $mobileNumber = $mobile;
         //Sender ID,While using route4 sender id should be 6 characters long.

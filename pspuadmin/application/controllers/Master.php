@@ -3,6 +3,8 @@ date_default_timezone_set('Asia/Kolkata');
 class Master extends CI_Controller
 {
 	
+
+
 	public function hobby_list()
 	{
 		$data = $this->login_details();

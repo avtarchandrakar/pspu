@@ -16,7 +16,7 @@
    			<div class="container">
    				<ul class="list-inline">
    					<li><a href="<?php echo base_url('Home');  ?>">Home</a></li>
-   					<li>Blog Details</li>
+   					<li><?php echo $post_details[0]->m_category_title;  ?></li>
    				</ul>
    			</div>
    		</div>
@@ -85,11 +85,11 @@
    									<h6 class="widget-title">Newsletter</h6>
    									<div class="news-box">
    										<p>Enter your e-mail and subscribe to our newsletter.</p>
-   										<form class="subscription-form" action="http://educhamp.themetrades.com/demo/assets/script/mailchamp.php" method="post">
+   										<form class="subscription-form" action="#" method="post">
    											<div class="ajax-message"></div>
    											<div class="input-group">
-   												<input name="dzEmail" required="required" type="email" class="form-control" placeholder="Your Email Address"/>
-   												<button name="submit" value="Submit" type="submit" class="btn black radius-no">
+   												<input name="email_newsletter" required="required" type="email" class="form-control" placeholder="Your Email Address"/>
+   												<button name="button" value="Submit" type="submit" class="btn black radius-no">
    													<i class="fa fa-paper-plane-o"></i>
    												</button>
    											</div>

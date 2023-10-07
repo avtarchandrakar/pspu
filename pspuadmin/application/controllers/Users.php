@@ -1,6 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
  class Users extends CI_Controller{
+
+  
    
     public function user_list(){ $data = $this->login_details();
         $data['pagename'] = "All User Details";
@@ -71,9 +73,10 @@ date_default_timezone_set('Asia/Kolkata');
         }
 
 //==========================Details===========================//
-protected function login_details(){ $this->require_login();
-    $data['log_user_dtl'] = $this->Login_model->user_details();
-    return $data;
+protected function login_details(){ 
+  // $this->require_login();
+  //   $data['log_user_dtl'] = $this->Login_model->user_details();
+  //   return $data;
   }
   //=========================/Details===========================//
 

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Action extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -96,13 +96,14 @@ class Home extends CI_Controller {
 		$this->load->view('election',$data);
 	}
 
-	public function otp_verify($id)
+	public function save()
 	{   
-		$data['pagename'] = 'OTP Verify';
-		$data['ins_id'] = $id;
-
-		$this->load->view('otp_verify',$data);
+		echo $this->Main_model->registration();
 	}
 	
+	public function updateDetails()
+	{   
+		echo $this->Main_model->updateDetails();
+	}
 }
 

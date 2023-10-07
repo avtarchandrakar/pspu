@@ -192,7 +192,7 @@
       return $res;
     }
 
-     public function get_post_details($id)
+    public function get_post_details($id)
     {
       $this->db->select('*');
       $this->db->where('id',$id);
@@ -204,6 +204,65 @@
       return $res;
     }
 
+    public function registration(){
+      $data = array();
+      $rand = rand(100009,999999);
+      $s_data = array(
+        "name" => $this->input->post('name'),
+        "email" => $this->input->post('email'),
+        "mobileno" => $this->input->post('mobileno'),
+        "otp" => $rand,
+        "added_on" => date('Y-m-d H:i'),
+      );
+      $set = $this->db->insert('tbl_registration',$s_data);
+      $last_id = $this->db->insert_id();
+      if(!empty($set)){
+        $data['status'] = 'success';
+        $data['last_id'] = $last_id;
+        $data['message'] = 'Inserted Successfully!';
+      }
+      else{
+        $data['status'] = 'fail';
+        $data['message'] = 'Somthing went wrong!';
+      }
+      return json_encode($data);
+    }
+
+    public function updateDetails(){
+      $data = array();
+      $otp = $this->input->post('otp');
+      $ins_id = $this->input->post('ins_id');
+
+      $result = $this->db->select('otp')->where('id',$ins_id)->get('tbl_registration')->result();
+      $reg_otp=$result['otp'];
+
+      if($otp==$reg_otp && $ins_id>0){
+        $s_data = array(
+          "is_indian_citizen" => $this->input->post('is_indian_citizen'),
+          "is_indian_residence" => $this->input->post('is_indian_residence'),
+          "gender" => $this->input->post('gender'),
+          "dob" => date('Y-m-d',strtotime($this->input->post('dob'))),
+        );
+        $this->db->where('id',$ins_id);
+        $set = $this->db->update('tbl_registration',$s_data);
+        if(!empty($set)){
+          $data['status'] = 'success';
+          $data['last_id'] = $ins_id;
+          $data['message'] = 'Inserted Successfully!';
+        }
+        else{
+          $data['status'] = 'fail';
+          $data['reg_otp'] = $reg_otp;
+          $data['message'] = 'Somthing went wrong!';
+        }
+      }
+      else{
+          $data['reg_otp'] = $reg_otp;
+        $data['status'] = 'fail';
+        $data['message'] = 'Given OTP is wrong!';
+      }
+      return json_encode($data);
+    }
 
   }
 

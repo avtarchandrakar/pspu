@@ -29,8 +29,8 @@
                 <div class="row">
 					<div class="col-lg-5 col-md-5 m-b30">
 						<div class="bg-primary text-white contact-info-bx">
-							<h2 class="m-b10 title-head">Contact <span>Information</span></h2>
-							<p>केन्द्रीय कार्यालय</p>
+							<h2 class="m-b10 title-head">Contact <span>Information</span> <br>केन्द्रीय कार्यालय</h2>
+							<p></p>
 							<div class="widget widget_getintuch">	
 								<ul>
 									<li><i class="ti-location-pin"></i>मढ़रिया काम्पलेक्स ,महाराजा चौक,मुक्त नगर, जिला- दुर्ग (छत्तीसगढ़ ) पिन - 491001</li>

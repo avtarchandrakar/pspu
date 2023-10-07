@@ -85,7 +85,7 @@
 							</div>
 						</div>
                     </div>
-					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+					<!-- <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4" style="display:none;">
                         <div class="widget widget_gallery gallery-grid-4">
                             <h5 class="footer-title">Our Gallery</h5>
                             <ul class="magnific-image">
@@ -99,7 +99,7 @@
 								<li><a href="assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic8.jpg" alt=""></a></li>
 							</ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

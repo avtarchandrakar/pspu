@@ -52,44 +52,66 @@
 <div class="page-wraper">
 	<div id="loading-icon-bx"></div>
 	<div class="account-form">
-		<div class="account-head" style="background-image:url(<?php echo base_url();?>assets/images/background/bg2.jpg);">
+		<div class="account-head"  style="background-image:url('<?php echo base_url();?>assets/images/background/bg2.jpg');">
 			<a href="<?php echo base_url('Home');?>">
 				<img src="<?php echo base_url();?>assets/images/logo-white-2.png" alt=""></a>
 		</div>
 		<div class="account-form-inner">
 			<div class="account-container">
 				<div class="heading-bx left">
-					<h2 class="title-head">Sign In <span>Now</span></h2>
+					<h4 class="title-head">Sign In <span>Now</span></h4>
 					<p>Login Your Account <a href="<?php echo base_url('Home/login');?>">Click here</a></p>
+				</div>
+				<div class="heading-bx left">
+					<h4 class="title-head">OTP Verify & Fill General Details </h4>
+					<p>OTP send into Your WhastApp</a></p>
 				</div>	
 				<form class="contact-bx" method= "post" id="frm-add-data">
 					<div class="row placeani">
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
-									<label>Your Name</label>
-									<input name="name" type="text" required="" class="form-control">
+									<label>Enter OTP</label>
+									<input name="ins_id" type="hidden" value="<?=$ins_id;?>">
+									<input name="otp" type="text" required="" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
-									<label>Your Email Address</label>
-									<input name="email" type="email" required="" class="form-control">
+									<label>Are You an Indian Citizen ?</label>
+									<input name="is_indian_citizen" type="text" required="" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group"> 
-									<label>Mobile Number</label>
-									<input name="mobileno" type="text" class="form-control" required="">
+									<label>Are You Residing in India ?</label>
+									<input name="is_indian_residence" type="text" class="form-control" required="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="input-group"> 
+									<label>Gender</label>
+									<input name="gender" type="text" class="form-control" required="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="input-group"> 
+									<label>Date Of Birth</label>
+									<label>Date Of Birth</label>
+									<input name="dob" type="date" class="form-control" required="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12 m-b30">
-							<button name="submit" type="submit" value="Submit" id="btn-add-data" class="btn button-md">Send OTP</button>
+							<button name="submit" type="submit" value="Submit" id="btn-add-data" class="btn button-md">Proceed</button>
 						</div>
 						<div class="col-lg-12" style="display:none;">
 							<h6>Sign Up with Social media</h6>
@@ -129,7 +151,7 @@ $("#frm-add-data").submit(function(e) { e.preventDefault();
   
   $.ajax({
     type: "POST",
-    url: "<?php echo site_url('Action/save'); ?>",
+    url: "<?php echo site_url('Action/updateDetails'); ?>",
     data: formData,
     processData: false,
     contentType: false,
@@ -138,8 +160,8 @@ $("#frm-add-data").submit(function(e) { e.preventDefault();
       if(data.status=='success'){
         swal(data.message, {icon: "success", timer: 1000, });
         setTimeout(function(){
-          window.location = "<?php echo site_url('Home/otp_verify').'/'; ?>"+data.last_id; 
-        },1000);
+          window.location = "<?php echo site_url('Home/register'); ?>"; 
+        },100000000);
       }else{ clkbtn.prop('disabled',false);
         swal(data.message, {icon: "error", timer: 5000, });
       }   

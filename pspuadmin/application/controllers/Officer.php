@@ -1,8 +1,10 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
 class Officer extends CI_Controller{
-   
-    public function officer_list(){ $data = $this->login_details();
+
+
+public function officer_list(){ 
+  // $data = $this->login_details();
         $data['pagename'] = "All Officer";
         $data['from_date'] ='';
         $data['to_date'] ='';
@@ -19,7 +21,7 @@ class Officer extends CI_Controller{
 
       public function add_officer(){ 
 
-       $data = $this->login_details();
+       // $data = $this->login_details();
         $data['id'] = $this->input->get('id');
         if(!empty($data['id'] )){ $data['pagename'] = "Edit Officer Details"; }else{
           $data['pagename'] = "Add Officer Details"; 
@@ -33,7 +35,7 @@ class Officer extends CI_Controller{
       }
 
       public function insert_officer_dtl(){
-        if ($this->ajax_login() === false){ return; }
+        // if ($this->ajax_login() === false){ return; }
         if($_SERVER["REQUEST_METHOD"] == "POST"){
           if($data = $this->Main_model->insert_officer_dtl()){
             $info = array( 'status'=>'success',
@@ -49,7 +51,8 @@ class Officer extends CI_Controller{
         }
       }
 
-       public function view_officer_dtl(){ $data = $this->login_details();
+       public function view_officer_dtl(){ 
+        // $data = $this->login_details();
         $data['pagename'] = "Officer Details";
         $data['id'] = $this->input->get('id');
         $data['edit_value'] = $this->Main_model->get_officer_dtl($data['id']);
@@ -58,7 +61,8 @@ class Officer extends CI_Controller{
        $this->load->view('view_officer', $data);
       
       }
-      public function delete_officer_dtl(){ if ($this->ajax_login() === false) { return; }
+      public function delete_officer_dtl(){ 
+        // if ($this->ajax_login() === false) { return; }
           if($_SERVER["REQUEST_METHOD"] == "POST"){
             if($info = $this->Main_model->delete_officer_dtl()){
             }
@@ -72,9 +76,10 @@ class Officer extends CI_Controller{
         }
 
 //==========================Details===========================//
-protected function login_details(){ $this->require_login();
-    $data['log_user_dtl'] = $this->Login_model->user_details();
-    return $data;
+protected function login_details(){ 
+  // $this->require_login();
+  //   $data['log_user_dtl'] = $this->Login_model->user_details();
+  //   return $data;
   }
   //=========================/Details===========================//
 
