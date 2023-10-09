@@ -104,7 +104,7 @@ background: #2e3f6e;
   <div class="seipkon-login-page-header-area">
     <div class="container-fluid"><div class="row"></div></div>
   </div>
-  <!-- Login Page Header Area End -->
+   Login Page Header Area End -->
 
   <!-- Login Form Start -->
   <div style="padding-top: 200px;" class="seipkon-login-form-area">

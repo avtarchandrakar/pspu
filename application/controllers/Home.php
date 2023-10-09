@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+date_default_timezone_set('Asia/Kolkata');
 class Home extends CI_Controller {
 
 	/**
@@ -103,6 +103,88 @@ class Home extends CI_Controller {
 
 		$this->load->view('otp_verify',$data);
 	}
+
+	public function contact_details($id)
+	{   
+		$data['states'] = $this->Main_model->get_states();
+		$data['assembly'] = $this->Main_model->get_assembly();
+		$data['pagename'] = 'Contact Details';
+		$data['ins_id'] = $id;
+
+		$this->load->view('contact_details',$data);
+	}
+
+	public function get_state_district()
+	{   
+		$result = $this->Main_model->get_state_district();
+		$list='';
+		if (!empty($result)) {
+      	foreach ($result as $key => $object) {
+	         $list=$list.'<option value="'.$object->city.'">'.$object->city.'</option>';
+	      }
+       }
+       echo $list;
+	}
+
+	public function payment($id)
+	{   
+		$data['pagename'] = 'Payment';
+		$data['ins_id'] = $id;
+		// print_r($this->Main_model->get_details($id));die();
+		$data['details'] = $this->Main_model->get_details($id);
+
+		$this->load->view('payment',$data);
+	}
+
+
+	public function dashboard()
+	{
+		$data = $this->login_details();
+		if ($data) {
+			$data['pagename'] = 'Dashboard';
+			$this->load->view('dashboard/header',$data);
+			$this->load->view('dashboard/dashboard',$data);
+			$this->load->view('dashboard/footer',$data);
+		}else{
+			redirect('Home/login');
+		}
+		
+	}
+
+	public function logout()
+	{
+		$data = $this->login_details();
+		if ($data) {
+			// return $this->session->sess_destroy();
+			$this->session->unset_userdata('ses_id');
+			$this->session->unset_userdata('is_user');
+			redirect('Home/login');
+		}else{
+			redirect('Home/dashboard');
+		}
+		
+	}
+
+	// login details
+    protected function login_details(){ 
+      $this->require_login();
+      $data['user_details'] = $this->user_details();
+      return $data;
+    }
+
+    protected function require_login(){
+      $is_user_in = $this->session->userdata('is_user');
+      if(isset($is_user_in) || $is_user_in == true){ return;
+      } else { redirect('Home/dashboard'); }
+    }
+
+    public function user_details(){
+    	$user_id = $this->session->userdata('ses_id');
+        $this->db->select('*');
+        $this->db->where("id", $user_id);
+        $sql = $this->db->get("tbl_registration");
+        return $sql->result();
+    }
 	
 }
 

@@ -62,13 +62,13 @@
 					<h2 class="title-head">Donation <span>Now</span></h2>
 					<p>Login Your Account <a href="<?php echo base_url('Home/login');?>">Click here</a></p>
 				</div>	
-				<form class="contact-bx" method="post" action="#" id="frm-create" enctype="mutipart/form-data">
+				<form class="contact-bx" method= "post" id="frm-add-data">
 					<div class="row placeani">
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
 									<label>Your Name</label>
-									<input name="dzName" type="text" required="" class="form-control">
+									<input name="name" type="text" required="" class="form-control">
 								</div>
 							</div>
 						</div>
@@ -76,20 +76,20 @@
 							<div class="form-group">
 								<div class="input-group">
 									<label>Your Email Address</label>
-									<input name="dzName" type="email" required="" class="form-control">
+									<input name="email" type="email" required="" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group"> 
-									<label>Your Password</label>
-									<input name="dzEmail" type="password" class="form-control" required="">
+									<label>Mobile Number</label>
+									<input name="mobileno" type="text" class="form-control" required="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12 m-b30">
-							<button name="submit" type="submit" value="Submit" class="btn button-md">Sign Up</button>
+							<button name="submit" type="submit" value="Submit" id="btn-add-data" class="btn button-md">Send OTP</button>
 						</div>
 						<div class="col-lg-12" style="display:none;">
 							<h6>Sign Up with Social media</h6>
@@ -106,45 +106,49 @@
 <!-- External JavaScripts -->
 <script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/bootstrap/js/popper.min.js"></script>
-<script src="<?php echo base_url();?><?php echo base_url();?>assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="<?php echo base_url();?><?php echo base_url();?>assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="<?php echo base_url();?>assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/magnific-popup/magnific-popup.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/counter/waypoints-min.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/counter/counterup.min.js"></script>
-<script src="<?php echo base_url();?><?php echo base_url();?>assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="<?php echo base_url();?>assets/vendors/imagesloaded/imagesloaded.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/masonry/masonry.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/masonry/filter.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/owl-carousel/owl.carousel.js"></script>
 <script src="<?php echo base_url();?>assets/js/functions.js"></script>
 <script src="<?php echo base_url();?>assets/js/contact.js"></script>
 <script src='<?php echo base_url();?>assets/vendors/switcher/switcher.js'></script>
-</body>
+<script src="" data-backup="<?php echo base_url('assets/plugins/sweet-alerts/js/sweetalert.min.js')?>"></script>
+<script src="<?php echo base_url('assets/plugins/sweet-alerts/js/sweetalert.min.js')?>"></script>
+<script src="<?php echo base_url('assets/plugins/sweet-alerts/js/custom-sweetalerts.js')?>"></script>
 <script type="text/javascript">
-	$("#frm-create").submit(function(e) { e.preventDefault();
-      var clkbtn = $("#btn-create"); clkbtn.prop('disabled',true);
-      var formData = new FormData(this); 
-      
-      $.ajax({
-        type: "POST",
-        url: "<?php echo site_url('Officer/insert_officer_dtl'); ?>",
-        data: formData,
-        processData: false,
-        contentType: false,
-        dataType: "JSON", 
-        success: function(data) {
-          if(data.status=='success'){
-            swal(data.message, {icon: "success", timer: 1000, });
-            setTimeout(function(){
-              window.location = "<?php echo site_url('Officer/officer_list'); ?>"; 
-            },1000);
-          }else{ clkbtn.prop('disabled',false);
-            swal(data.message, {icon: "error", timer: 5000, });
-          }   
-        }, error: function (jqXHR, status, err){ clkbtn.prop('disabled',false);
-          swal("Some Problem Occurred!! please try again", { icon: "error", timer: 2000, });
-        }
-      });
-    });
+$("#frm-add-data").submit(function(e) { e.preventDefault();
+  var clkbtn = $("#btn-add-data"); clkbtn.prop('disabled',true);
+  var formData = new FormData(this); 
+  
+  $.ajax({
+    type: "POST",
+    url: "<?php echo site_url('Action/save'); ?>",
+    data: formData,
+    processData: false,
+    contentType: false,
+    dataType: "JSON", 
+    success: function(data) {
+      if(data.status=='success'){
+        swal(data.message, {icon: "success", timer: 1000, });
+        setTimeout(function(){
+          window.location = "<?php echo site_url('Home/otp_verify').'/'; ?>"+data.last_id; 
+        },1000);
+      }else{ clkbtn.prop('disabled',false);
+        swal(data.message, {icon: "error", timer: 5000, });
+      }   
+    }, error: function (jqXHR, status, err){ clkbtn.prop('disabled',false);
+      swal("Some Problem Occurred!! please try again", { icon: "error", timer: 2000, });
+    }
+  }); 
+});
 </script>
+</body>
+
 </html>

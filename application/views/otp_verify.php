@@ -64,7 +64,7 @@
 				</div>
 				<div class="heading-bx left">
 					<h4 class="title-head">OTP Verify & Fill General Details </h4>
-					<p>OTP send into Your WhastApp</a></p>
+					<p>OTP send into Your WhastApp</p>
 				</div>	
 				<form class="contact-bx" method= "post" id="frm-add-data">
 					<div class="row placeani">
@@ -74,6 +74,14 @@
 									<label>Enter OTP</label>
 									<input name="ins_id" type="hidden" value="<?=$ins_id;?>">
 									<input name="otp" type="text" required="" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="input-group">
+									<label>Set Password</label>
+									<input name="password" type="text" required="" class="form-control">
 								</div>
 							</div>
 						</div>
@@ -128,13 +136,13 @@
 <!-- External JavaScripts -->
 <script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/bootstrap/js/popper.min.js"></script>
-<script src="<?php echo base_url();?><?php echo base_url();?>assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="<?php echo base_url();?><?php echo base_url();?>assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="<?php echo base_url();?>assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/magnific-popup/magnific-popup.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/counter/waypoints-min.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/counter/counterup.min.js"></script>
-<script src="<?php echo base_url();?><?php echo base_url();?>assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="<?php echo base_url();?>assets/vendors/imagesloaded/imagesloaded.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/masonry/masonry.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/masonry/filter.js"></script>
 <script src="<?php echo base_url();?>assets/vendors/owl-carousel/owl.carousel.js"></script>
@@ -160,8 +168,8 @@ $("#frm-add-data").submit(function(e) { e.preventDefault();
       if(data.status=='success'){
         swal(data.message, {icon: "success", timer: 1000, });
         setTimeout(function(){
-          window.location = "<?php echo site_url('Home/register'); ?>"; 
-        },100000000);
+          window.location = "<?php echo site_url('Home/contact_details').'/'; ?>"+data.last_id; 
+        },1000);
       }else{ clkbtn.prop('disabled',false);
         swal(data.message, {icon: "error", timer: 5000, });
       }   

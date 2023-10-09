@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<?php
+
+// echo "hii";
+$contribution=0;
+$total=0;
+$mobileno='';
+$id=0;
+$date_time=date('Y-m-d H:i:s');
+  if (!empty($details)) {
+    foreach ($details as $key => $object) {
+        // echo '<option value="'.$object->state.'">'.$object->state.'</option>';
+        $contribution=$object->contribution;
+        $total=$object->contribution;
+        $mobileno=$object->mobileno;
+        $id=$object->id;
+    }
+}
+// echo $mobileno;die();
+?>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>             
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script language="javascript">
+
+    $(document).ready(function() {
+    alert("date_time");
+    
+    })
+</script>

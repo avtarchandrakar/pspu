@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+date_default_timezone_set('Asia/Kolkata');
 class Action extends CI_Controller {
 
 	/**
@@ -105,5 +105,32 @@ class Action extends CI_Controller {
 	{   
 		echo $this->Main_model->updateDetails();
 	}
+
+	public function updateContactDetails()
+	{   
+		echo $this->Main_model->updateContactDetails();
+	}
+
+	public function payment_process()
+	{   
+		echo $this->Main_model->payment_process();
+	}
+
+	public function payment_process_response()
+	{   
+		echo $this->Main_model->payment_process_response();
+	}
+
+	public function sendtransaction()
+	{   
+		echo $this->Main_model->sendtransaction();
+	}
+
+	public function verify()
+	{   
+		echo $this->Main_model->verify();
+	}
+
+	
 }
 
