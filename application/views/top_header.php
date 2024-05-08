@@ -62,7 +62,7 @@
                            <li><a href="javascript:;">About<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
 								 <li><a href="<?php echo site_url('Home/history');?>">OUR HISTORY</a></li>
-								 <li><a href="<?php echo site_url('Home/differences');?>">Why We Are Diffrence</a></li><li><a href="<?php echo site_url('Home/organization');?>">Organization</a></li><li><a href="<?php echo site_url('Home/philosophy');?>">Our Philosophy</a></li></ul>
+								 <li><a href="<?php echo site_url('Home/differences');?>">Why We Are Diffrence</a></li><li><a href="<?php echo site_url('Home/organization');?>">Organization</a></li><li><a href="<?php echo site_url('Home/philosophy');?>">Our Philosophy</a></li><li><a href="/assets/PDF/PSPU-CONSTITUTION.pdf" target="_blank">PSPU CONSTITUTION</a></li></ul>
 							</li>
 							<li><a href="javascript:;">Leadership<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">

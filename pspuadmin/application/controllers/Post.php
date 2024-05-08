@@ -61,7 +61,7 @@ date_default_timezone_set('Asia/Kolkata');
        $this->load->view('view_post', $data);
       
       }
-      public function delete_post_dtl(){ if ($this->ajax_login() === false) { return; }
+      public function delete_post_dtl(){ 
           if($_SERVER["REQUEST_METHOD"] == "POST"){
             if($info = $this->Main_model->delete_post_dtl()){
             }

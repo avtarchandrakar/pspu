@@ -120,7 +120,7 @@
                            <li><a href="javascript:;">About<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
 								 <li><a href="<?php echo site_url('Home/history');?>">OUR HISTORY</a></li>
-								 <li><a href="<?php echo site_url('Home/differences');?>">Why We Are Diffrence</a></li><li><a href="<?php echo site_url('Home/organization');?>">Organization</a></li><li><a href="<?php echo site_url('Home/philosophy');?>">Our Philosophy</a></li></ul>
+								 <li><a href="<?php echo site_url('Home/differences');?>">Why We Are Diffrence</a></li><li><a href="<?php echo site_url('Home/organization');?>">Organization</a></li><li><a href="<?php echo site_url('Home/philosophy');?>">Our Philosophy</a></li><li><a href="/assets/PDF/PSPU-CONSTITUTION.pdf" target="_blank">PSPU CONSTITUTION</a></li></ul>
 							</li>
 							<li><a href="javascript:;">Leadership<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
@@ -372,11 +372,11 @@
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="service-bx">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic1.jpg" alt="">
+									<img src="assets/images/mandhariya.jpg" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-bank text-primary"></i>
+										<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M351.2 4.8c3.2-2 6.6-3.3 10-4.1c4.7-1 9.6-.9 14.1 .1c7.7 1.8 14.8 6.5 19.4 13.6L514.6 194.2c8.8 13.1 13.4 28.6 13.4 44.4v73.5c0 6.9 4.4 13 10.9 15.2l79.2 26.4C631.2 358 640 370.2 640 384v96c0 9.9-4.6 19.3-12.5 25.4s-18.1 8.1-27.7 5.5L431 465.9c-56-14.9-95-65.7-95-123.7V224c0-17.7 14.3-32 32-32s32 14.3 32 32v80c0 8.8 7.2 16 16 16s16-7.2 16-16V219.1c0-7-1.8-13.8-5.3-19.8L340.3 48.1c-1.7-3-2.9-6.1-3.6-9.3c-1-4.7-1-9.6 .1-14.1c1.9-8 6.8-15.2 14.3-19.9zm-62.4 0c7.5 4.6 12.4 11.9 14.3 19.9c1.1 4.6 1.2 9.4 .1 14.1c-.7 3.2-1.9 6.3-3.6 9.3L213.3 199.3c-3.5 6-5.3 12.9-5.3 19.8V304c0 8.8 7.2 16 16 16s16-7.2 16-16V224c0-17.7 14.3-32 32-32s32 14.3 32 32V342.3c0 58-39 108.7-95 123.7l-168.7 45c-9.6 2.6-19.9 .5-27.7-5.5S0 490 0 480V384c0-13.8 8.8-26 21.9-30.4l79.2-26.4c6.5-2.2 10.9-8.3 10.9-15.2V238.5c0-15.8 4.7-31.2 13.4-44.4L245.2 14.5c4.6-7.1 11.7-11.8 19.4-13.6c4.6-1.1 9.4-1.2 14.1-.1c3.5 .8 6.9 2.1 10 4.1z"/></svg>
 									</div>
 									<h4><a href="#" style="font-weight:bold;">राष्ट्रीय अध्यक्ष </a><br>गिरधर मढ़रिया (एम.काम., एल.एल.बी.)</h4>
 									<!-- <a href="#" class="btn radius-xl">View More</a> -->
@@ -386,11 +386,11 @@
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="service-bx">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic2.jpg" alt="">
+									<img src="assets/images/chaitu.jpg" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-book text-primary"></i>
+										<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M351.2 4.8c3.2-2 6.6-3.3 10-4.1c4.7-1 9.6-.9 14.1 .1c7.7 1.8 14.8 6.5 19.4 13.6L514.6 194.2c8.8 13.1 13.4 28.6 13.4 44.4v73.5c0 6.9 4.4 13 10.9 15.2l79.2 26.4C631.2 358 640 370.2 640 384v96c0 9.9-4.6 19.3-12.5 25.4s-18.1 8.1-27.7 5.5L431 465.9c-56-14.9-95-65.7-95-123.7V224c0-17.7 14.3-32 32-32s32 14.3 32 32v80c0 8.8 7.2 16 16 16s16-7.2 16-16V219.1c0-7-1.8-13.8-5.3-19.8L340.3 48.1c-1.7-3-2.9-6.1-3.6-9.3c-1-4.7-1-9.6 .1-14.1c1.9-8 6.8-15.2 14.3-19.9zm-62.4 0c7.5 4.6 12.4 11.9 14.3 19.9c1.1 4.6 1.2 9.4 .1 14.1c-.7 3.2-1.9 6.3-3.6 9.3L213.3 199.3c-3.5 6-5.3 12.9-5.3 19.8V304c0 8.8 7.2 16 16 16s16-7.2 16-16V224c0-17.7 14.3-32 32-32s32 14.3 32 32V342.3c0 58-39 108.7-95 123.7l-168.7 45c-9.6 2.6-19.9 .5-27.7-5.5S0 490 0 480V384c0-13.8 8.8-26 21.9-30.4l79.2-26.4c6.5-2.2 10.9-8.3 10.9-15.2V238.5c0-15.8 4.7-31.2 13.4-44.4L245.2 14.5c4.6-7.1 11.7-11.8 19.4-13.6c4.6-1.1 9.4-1.2 14.1-.1c3.5 .8 6.9 2.1 10 4.1z"/></svg>
 									</div>
 									<h4><a href="#" style="font-weight:bold;">चैतू भाई पटेल </a><br>राष्ट्रीय महासचिव </h4>
 									<!-- <a href="#" class="btn radius-xl">View More</a> -->
@@ -400,13 +400,13 @@
 						<div class="col-lg-4 col-md-4 col-sm-12">
 							<div class="service-bx m-b0">
 								<div class="action-box">
-									<img src="assets/images/our-services/pic3.jpg" alt="">
+									<img src="assets/images/puran.jpg" alt="">
 								</div>
 								<div class="info-bx text-center">
 									<div class="feature-box-sm radius bg-white">
-										<i class="fa fa-file-text-o text-primary"></i>
+										<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M351.2 4.8c3.2-2 6.6-3.3 10-4.1c4.7-1 9.6-.9 14.1 .1c7.7 1.8 14.8 6.5 19.4 13.6L514.6 194.2c8.8 13.1 13.4 28.6 13.4 44.4v73.5c0 6.9 4.4 13 10.9 15.2l79.2 26.4C631.2 358 640 370.2 640 384v96c0 9.9-4.6 19.3-12.5 25.4s-18.1 8.1-27.7 5.5L431 465.9c-56-14.9-95-65.7-95-123.7V224c0-17.7 14.3-32 32-32s32 14.3 32 32v80c0 8.8 7.2 16 16 16s16-7.2 16-16V219.1c0-7-1.8-13.8-5.3-19.8L340.3 48.1c-1.7-3-2.9-6.1-3.6-9.3c-1-4.7-1-9.6 .1-14.1c1.9-8 6.8-15.2 14.3-19.9zm-62.4 0c7.5 4.6 12.4 11.9 14.3 19.9c1.1 4.6 1.2 9.4 .1 14.1c-.7 3.2-1.9 6.3-3.6 9.3L213.3 199.3c-3.5 6-5.3 12.9-5.3 19.8V304c0 8.8 7.2 16 16 16s16-7.2 16-16V224c0-17.7 14.3-32 32-32s32 14.3 32 32V342.3c0 58-39 108.7-95 123.7l-168.7 45c-9.6 2.6-19.9 .5-27.7-5.5S0 490 0 480V384c0-13.8 8.8-26 21.9-30.4l79.2-26.4c6.5-2.2 10.9-8.3 10.9-15.2V238.5c0-15.8 4.7-31.2 13.4-44.4L245.2 14.5c4.6-7.1 11.7-11.8 19.4-13.6c4.6-1.1 9.4-1.2 14.1-.1c3.5 .8 6.9 2.1 10 4.1z"/></svg>
 									</div>
-									<h4><a href="#" style="font-weight:bold;">पुष्पा पराते </a><br>राष्ट्रीय कोषाध्यक्ष</h4>
+									<h4><a href="#" style="font-weight:bold;"> पूरन सिंह लोधी </a><br>राष्ट्रीय संगठन मंत्री</h4>
 									<!-- <a href="#" class="btn radius-xl">View More</a> -->
 								</div>
 							</div>
@@ -489,7 +489,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center text-white">
 							<h2>Joined Our Party Members</h2>
-							<h5>Own Your Feature</h5>
+							<!-- <h5>Own Your Feature</h5> -->
 							<form class="cours-search">
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="What do you want to learn today?	">
@@ -505,23 +505,22 @@
 							<div class="col-md-4 col-sm-6">
 								<div class="cours-search-bx m-b30">
 									<div class="icon-box">
-										<h3><i class="ti-user"></i><span class="counter">5</span>M</h3>
+										<h3><i class="ti-user"></i><span class="counter">7000</span></h3>
 									</div>
 									<!-- <span class="cours-search-text">Over 5 million student</span> -->
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<div class="cours-search-bx m-b30">
+								<!-- <div class="cours-search-bx m-b30">
 									<div class="icon-box">
 										<h3><i class="ti-book"></i><span class="counter">30</span>K</h3>
 									</div>
-									<!-- <span class="cours-search-text">30,000 Courses.</span> -->
-								</div>
+								</div> -->
 							</div>
 							<div class="col-md-4 col-sm-12">
 								<div class="cours-search-bx m-b30">
 									<div class="icon-box">
-										<h3><i class="ti-layout-list-post"></i><span class="counter">20</span>K</h3>
+										<h3><i class="ti-layout-list-post"></i><span class="counter">21000</span></h3>
 									</div>
 									<!-- <span class="cours-search-text">Learn Anythink Online.</span> -->
 								</div>
